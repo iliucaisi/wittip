@@ -1,0 +1,8 @@
+group 'com.lucas'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'war'
+
+dependencies {
+    testCompile group: 'io.rest-assured', name: 'rest-assured', version: '3.0.6'
+}

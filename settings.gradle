@@ -1,0 +1,5 @@
+rootProject.name = 'wittip'
+include 'kafka'
+include 'rest'
+include 'instrumentation'
+
