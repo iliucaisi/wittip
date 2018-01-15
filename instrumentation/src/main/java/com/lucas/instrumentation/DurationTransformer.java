@@ -32,8 +32,8 @@ public class DurationTransformer implements ClassFileTransformer{
                 for (CtMethod method : methods) {
                     method.addLocalVariable("startTime", CtClass.longType);
                     method.insertBefore("startTime = System.nanoTime();");
-                    method.insertAfter("System.out.println(\"Execution Duration(nano sec): \"(System.nanoTime() - " +
-                            "startTime)");
+                    method.insertAfter("System.out.println(\"Execution Duration(nano sec): \" + \n" +
+                            "(System.nanoTime() - startTime));");
                 }
                 byteCode = ctClass.toBytecode();
                 ctClass.detach();
