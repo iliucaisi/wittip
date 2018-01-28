@@ -2,4 +2,6 @@ rootProject.name = 'wittip'
 include 'kafka'
 include 'rest'
 include 'instrumentation'
+include 'btrace'
+include 'btrace'
 
